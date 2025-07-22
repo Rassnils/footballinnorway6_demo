@@ -1,3 +1,3 @@
 # Football in Norway
 
-Startkode for prosjektet ditt.
+Startpakke med TypeScript-støtte.
