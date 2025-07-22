@@ -11,7 +11,8 @@ const matchData = [
   {
     date: 'Sunday 31. August',
     matches: [
-      { time: '19:00', teams: 'Viking vs Rosenborg', level: 'Eliteserien', stadium: 'SR-Bank Arena', city: 'Stavanger', link: '#' }
+      { time: '19:00', teams: 'Viking vs Rosenborg', level: 'Eliteserien', stadium: 'SR-Bank Arena', city: 'Stavanger', link: '#' },
+      { time: '14:00', teams: 'Frigg vs Ready', level: '3. divisjon', stadium: 'Tørteberg', city: 'Oslo', link: '#' }
     ]
   }
 ];
@@ -20,10 +21,10 @@ export default function Page() {
   const [open, setOpen] = useState(null);
   return (
     <main className="p-4">
-      <h2 className="text-xl mb-4 font-semibold">Upcoming matches</h2>
+      <h2 className="text-xl mb-4 font-semibold">Upcoming matches in Norway</h2>
       {matchData.map((day, idx) => (
         <div key={idx} className="mb-4">
-          <button onClick={() => setOpen(open === idx ? null : idx)} className="text-left w-full font-medium text-blue-600">
+          <button onClick={() => setOpen(open === idx ? null : idx)} className="text-left w-full font-medium text-blue-700">
             {day.date}
           </button>
           {open === idx && (
