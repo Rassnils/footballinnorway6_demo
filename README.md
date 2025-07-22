@@ -1,2 +1,3 @@
-# footballinnorway6_demo
-footballinnorway6
+# Football in Norway
+
+Startkode for prosjektet ditt.
